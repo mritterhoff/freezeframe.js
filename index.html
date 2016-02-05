@@ -7,23 +7,47 @@
 <link rel="stylesheet" href="https://cdn.rawgit.com/ctrl-freaks/freezeframe.js/master/build/css/freezeframe_styles.min.css">
 <!-- js -->
 <script type="text/javascript" src="https://cdn.rawgit.com/ctrl-freaks/freezeframe.js/master/build/js/freezeframe.pkgd.js"></script>
+
+<!-- css not used by freezeframe -->
+<style type="text/css">
+body {
+  text-align: center;
+  max-width: 800px;
+  margin: 0px auto;
+  padding: 20px;
+}
+
+p {
+  font-family: monospace;
+  text-align: center;
+}
+
+.bold {
+  font-weight: 700;
+}
+</style>
+
+<!-- run freezeframe -->
+<script type="text/javascript">
+  $(function() {
+    gifs = new freezeframe().freeze();
+  })
+</script>
 </head>
 
-<body style="text-align: center; max-width: 800px; margin: 0px auto; padding: 20px;">
+<body>
 
+<p class="bold">✨ freezeframe.js ✨</p>
 
-<p style="font-family: monospace; font-weight: 700;">freezeframe.js</p>
 <p style="font-family: monospace;">natural</p>
+
+<p>natural</p>
 <img class="freezeframe" src="http://49.media.tumblr.com/05dd38679f733525f02483d192f16db9/tumblr_nla0aiN4cl1qhcd6po1_500.gif" />
 
-<p style="font-family: monospace;">responsive</p>
+<p>responsive</p>
 <img class="freezeframe freezeframe-responsive" src="http://45.media.tumblr.com/d07e2e7dbffc7da8e40ac31508929230/tumblr_nla0b4xBxW1qhcd6po1_500.gif" />
 
-<p style="font-family:monospace;">mr. gifs by <a href="http://www.mrgif.com/">mr. gif</a>
+<p>mr. gifs by <a href="http://www.mrgif.com/">mr. gif</a>
 
 </body>
 </html>
-
-<script type="text/javascript">
-  gifs = new freezeframe().freeze();
-</script>
